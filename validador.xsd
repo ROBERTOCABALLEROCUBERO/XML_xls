@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="tienda_videojuegos">
+      
+    <xs:complexType >
+           <xs:sequence>
+            <xs:element ref="videojuego" minOccurs="1" maxOccurs="unbounded" ></xs:element>
+            <xs:element ref="cliente" minOccurs="1" maxOccurs="unbounded"></xs:element>
+           </xs:sequence>
+        </xs:complexType>
+        
+    
+    </xs:element>
+    <xs:element name="videojuego" ></xs:element>
+    <xs:complexType name="videojuego">
+           <xs:sequence>
+           <xs:element name="videojuego" type="xs:string"></xs:element>
+           <xs:element name="nombre" type="xs:string"></xs:element>
+           <xs:element name="Fecha" type="xs:string"></xs:element>
+           <xs:element name="precio" type="xs:string"></xs:element>
+           <xs:element name="Distribuidora" type="xs:string"></xs:element>
+           </xs:sequence>
+           <xs:attribute name="codigo"></xs:attribute>
+        </xs:complexType>
+        <xs:element name="cliente" ></xs:element>
+    <xs:complexType name="xliente">
+           <xs:sequence>
+           <xs:element name="cliente" type="xs:string"></xs:element>
+           <xs:element name="nombre" type="xs:string"></xs:element>
+           <xs:element name="apellidos" type="xs:string"></xs:element>
+           <xs:element name="primer_apellido"></xs:element>
+           <xs:element name="precio" type="xs:string"></xs:element>
+           <xs:element name="Distribuidora" type="xs:string"></xs:element>
+           </xs:sequence>
+           <xs:attribute name="codigo"></xs:attribute>
+        </xs:complexType>
+</xs:schema>
