@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tienda_videojuegos>
+    <videojuego>
+        <nombre>FIFA</nombre>
+        <fecha>11-05-2022</fecha>
+        <precio>35€</precio>
+        <Distribuidora>EA</Distribuidora>
+        <Ventas>132.343</Ventas>
+        <codigo>FUT1234?¿</codigo>
+    </videojuego>
+    <videojuego>
+        <nombre>Elden Ring</nombre>
+        <fecha>14-2-2022</fecha>
+        <precio>34€</precio>
+        <Distribuidora>From Software</Distribuidora>
+        <Ventas>312.234</Ventas>
+        <codigo>SOU4321¿?</codigo>
+    </videojuego>
+
+
+    <cliente>
+        <nombre>Juan</nombre>
+        <primer_apellido>
+Perez
+        </primer_apellido>
+    </cliente>
+    <cliente>
+        <nombre>Miguel</nombre>
+        <primer_apellido>
+Gomez 
+        </primer_apellido>
+    </cliente>
+</tienda_videojuegos>
