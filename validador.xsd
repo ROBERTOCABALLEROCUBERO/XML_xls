@@ -21,6 +21,7 @@ elementFormDefault="qualified">
                 <xs:element name="fecha" type="xs:string"/>
                 <xs:element name="precio" type="xs:int"/>
                 <xs:element name="Distribuidora" type="xs:string"/>
+                <xs:element name="Ventas" type="xs:int" minOccurs="0"/>
             </xs:sequence>
             </xs:complexType>
           </xs:element>
@@ -37,7 +38,8 @@ elementFormDefault="qualified">
                   </xs:element>
 
                 <xs:element name="nombre" type="xs:string"/>
-                <xs:element name="apellidos" type="xs:string"/>
+                <xs:element name="apellidos" type="xs:string" minOccurs="0"/>
+                <xs:element name="primer_apellido" type="xs:string" minOccurs="0"/>
                 <xs:element name="localizacion" type="xs:string"/>
                 <xs:element name="Compras" type="xs:string"/>
                 <xs:element name="Fecha_afiliado" type="xs:date"/>

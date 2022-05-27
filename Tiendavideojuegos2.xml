@@ -1,38 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tienda_videojuegos>
-    <videojuego codigo="FUT1234?¿">
+<tienda_videojuegos xmlns="https://www.w3schools.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="https://www.w3schools.com validador.xsd">
+    <videojuego >
+        <codigo>FUT1234?¿</codigo>
         <nombre>FIFA</nombre>
         <fecha>2022-05-11</fecha>
-        <precio>35€</precio>
+        <precio>35</precio>
         <Distribuidora>EA</Distribuidora>
-        <Ventas>132.343</Ventas>
-        <codigo>FUT1234?¿</codigo>
+        <Ventas>132343</Ventas>
       
     </videojuego>
-    <videojuego codigo = "SOU4321¿?">
+    <videojuego>
+        <codigo>SOU4321¿?</codigo>
         <nombre>Elden Ring</nombre>
         <fecha>2022-2-14</fecha>
-        <precio>34€</precio>
+        <precio>34</precio>
         <Distribuidora>From Software</Distribuidora>
-        <Ventas>312.234</Ventas>
-        <codigo>SOU4321¿?</codigo>
+        <Ventas>312234</Ventas>
         
     </videojuego>
 
 
-    <cliente codigo = "PAR4234¿">
+    <cliente>
+      <codigo>PAR4234¿</codigo>
         <nombre>Juan</nombre>
         <!-- Pongo el primer apellido -->
         <primer_apellido>
 Perez
         </primer_apellido>
-        <codigo>PAR4234¿</codigo>
         <localizacion>Barcelona</localizacion>
         <Compras>9</Compras>
         <Fecha_afiliado>2013-05-21</Fecha_afiliado>
-        <miembros_sumados>2</miembros_sumados>
+        <Miembros_sumados>2</Miembros_sumados>
     </cliente>
-    <cliente codigo="PER4414¿">
+    <cliente>
+        <codigo>PER4414¿</codigo>
         <nombre>Miguel</nombre>
         <primer_apellido>
 Gomez 
@@ -41,7 +44,7 @@ Gomez
         <localizacion>Madrid</localizacion>
         <Compras>3</Compras>
         <Fecha_afiliado>2003-04-11</Fecha_afiliado>
-        <miembros_sumados>6</miembros_sumados>
-        <codigo>PER4414¿</codigo>
+        <Miembros_sumados>6</Miembros_sumados>
+ 
     </cliente>
 </tienda_videojuegos>
