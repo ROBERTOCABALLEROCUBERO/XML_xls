@@ -37,9 +37,7 @@ elementFormDefault="qualified">
                   </xs:element>
 
                 <xs:element name="nombre" type="xs:string"/>
-                <!-- APELLIDOS: maximo 4 -->
                 <xs:element name="apellidos" type="xs:string"/>
-                <!-- DIRECCION: es opcional -->
                 <xs:element name="localizacion" type="xs:string"/>
                 <xs:element name="Compras" type="xs:string"/>
                 <xs:element name="Fecha_afiliado" type="xs:date"/>
