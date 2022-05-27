@@ -6,7 +6,7 @@ elementFormDefault="qualified">
 <xs:element name="tienda_videojuegos">
   <xs:complexType>
     <xs:sequence>
-          <xs:element name="videojuego" minOccurs="4" maxOccurs="100">
+          <xs:element name="videojuego" minOccurs="2" maxOccurs="unbounded">
             <xs:complexType>
               <xs:sequence>
             
