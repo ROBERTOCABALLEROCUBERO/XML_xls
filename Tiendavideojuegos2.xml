@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tienda_videojuegos xmlns="https://www.w3schools.com"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="https://www.w3schools.com validador.xsd">
-    <videojuego >
+<tienda_videojuegos xmlns="https://www.w3schools.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.w3schools.com validador.xsd">
+    <videojuego>
         <codigo>FUT1234?¿</codigo>
         <nombre>FIFA</nombre>
         <fecha>2022-05-11</fecha>
         <precio>35</precio>
         <Distribuidora>EA</Distribuidora>
         <Ventas>132343</Ventas>
-      
+
     </videojuego>
     <videojuego>
         <codigo>SOU4321¿?</codigo>
@@ -18,12 +16,12 @@ xsi:schemaLocation="https://www.w3schools.com validador.xsd">
         <precio>34</precio>
         <Distribuidora>From Software</Distribuidora>
         <Ventas>312234</Ventas>
-        
+
     </videojuego>
 
 
     <cliente>
-      <codigo>PAR4234¿</codigo>
+        <codigo>PAR4234¿</codigo>
         <nombre>Juan</nombre>
         <!-- Pongo el primer apellido -->
         <primer_apellido>
@@ -40,11 +38,11 @@ Perez
         <primer_apellido>
 Gomez 
         </primer_apellido>
-        
+
         <localizacion>Madrid</localizacion>
         <Compras>3</Compras>
         <Fecha_afiliado>2003-04-11</Fecha_afiliado>
         <Miembros_sumados>6</Miembros_sumados>
- 
+
     </cliente>
 </tienda_videojuegos>
