@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tienda_videojuegos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validador.xsd">
-    <videojuego codigo="FUT1234?¿">
+<tienda_videojuegos xmlns="https://www.w3schools.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="https://www.w3schools.com validador.xsd">
+    <videojuego>
+        <codigo>FUT1234?¿</codigo>
         <nombre>FIFA</nombre>
         <fecha>2022-05-11</fecha>
-        <precio>35€</precio>
+        <precio>35</precio>
         <Distribuidora>EA</Distribuidora>
         <!-- Quito las ventas -->
     
     </videojuego>
-    <videojuego codigo="SOU4321¿?">
+    <videojuego>
+        <codigo>SOU4321¿?</codigo>
         <nombre>Elden Ring</nombre>
         <fecha>2022-2-14</fecha>
-        <precio>34€</precio>
+        <precio>34</precio>
         <Distribuidora>From Software</Distribuidora>
                 <!-- Quito las ventas -->
 
@@ -20,25 +24,25 @@
     
 
     <cliente>
+        <codigo>MER5224¿</codigo>
         <nombre>Roberto</nombre>
         <apellidos>
 Caballero Cubero
         </apellidos>
-        <codigo>MER5224¿</codigo>
         <localizacion>Barcelona</localizacion>
         <Compras>13</Compras>
         <Fecha_afiliado>2022-09-11</Fecha_afiliado>
-        <miembros_sumados>6</miembros_sumados>    
+        <Miembros_sumados>6</Miembros_sumados>    
     </cliente>
     <cliente>
+        <codigo>ZAR4234¿</codigo>
         <nombre>Juan Antonio</nombre>
         <apellidos>
 Gomez Fernandez
         </apellidos>    
-        <codigo>ZAR4234¿</codigo>
         <localizacion>Zaragoza</localizacion>
         <Compras>19</Compras>
         <Fecha_afiliado>2013-12-11</Fecha_afiliado>
-        <miembros_sumados>9</miembros_sumados>
+        <Miembros_sumados>9</Miembros_sumados>
     </cliente>
 </tienda_videojuegos>

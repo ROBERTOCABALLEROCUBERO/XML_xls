@@ -1,37 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:element name="tienda_videojuegos">
-      
-    <xs:complexType >
-           <xs:sequence>
-            <xs:element ref="videojuego" minOccurs="1" maxOccurs="unbounded" ></xs:element>
-            <xs:element ref="cliente" minOccurs="1" maxOccurs="unbounded"></xs:element>
-           </xs:sequence>
-        </xs:complexType>
-        
-    
-    </xs:element>
-    <xs:element name="videojuego" ></xs:element>
-    <xs:complexType name="videojuego">
-           <xs:sequence>
-           <xs:element name="videojuego" type="xs:string"></xs:element>
-           <xs:element name="nombre" type="xs:string"></xs:element>
-           <xs:element name="Fecha" type="xs:string"></xs:element>
-           <xs:element name="precio" type="xs:string"></xs:element>
-           <xs:element name="Distribuidora" type="xs:string"></xs:element>
-           </xs:sequence>
-           <xs:attribute name="codigo"></xs:attribute>
-        </xs:complexType>
-        <xs:element name="cliente" ></xs:element>
-    <xs:complexType name="xliente">
-           <xs:sequence>
-           <xs:element name="cliente" type="xs:string"></xs:element>
-           <xs:element name="nombre" type="xs:string"></xs:element>
-           <xs:element name="apellidos" type="xs:string"></xs:element>
-           <xs:element name="primer_apellido"></xs:element>
-           <xs:element name="precio" type="xs:string"></xs:element>
-           <xs:element name="Distribuidora" type="xs:string"></xs:element>
-           </xs:sequence>
-           <xs:attribute name="codigo"></xs:attribute>
-        </xs:complexType>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="https://www.w3schools.com"
+xmlns="https://www.w3schools.com"
+elementFormDefault="qualified">
+<xs:element name="tienda_videojuegos">
+  <xs:complexType>
+    <xs:sequence>
+          <xs:element name="videojuego" minOccurs="4" maxOccurs="100">
+            <xs:complexType>
+              <xs:sequence>
+            
+                <xs:element name="codigo">
+                  <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                  <xs:pattern value="[A-Z]{3}[0-9]{4}[(.@#!¿=$%^+*?)]{2}"/>
+                  </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="nombre" type="xs:string"/>
+                <xs:element name="fecha" type="xs:string"/>
+                <xs:element name="precio" type="xs:int"/>
+                <xs:element name="Distribuidora" type="xs:string"/>
+            </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="cliente" minOccurs="1" maxOccurs="unbounded">
+              <xs:complexType>
+              <xs:sequence>
+                
+                <xs:element name="codigo">
+                  <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                  <xs:pattern value="[A-Z]{3}[0-9]{4}[(@#$%?=¿.^+)]"/>
+                  </xs:restriction>
+                  </xs:simpleType>
+                  </xs:element>
+
+                <xs:element name="nombre" type="xs:string"/>
+                <!-- APELLIDOS: maximo 4 -->
+                <xs:element name="apellidos" type="xs:string"/>
+                <!-- DIRECCION: es opcional -->
+                <xs:element name="localizacion" type="xs:string"/>
+                <xs:element name="Compras" type="xs:string"/>
+                <xs:element name="Fecha_afiliado" type="xs:date"/>
+                <xs:element name="Miembros_sumados"/>
+            
+
+              </xs:sequence>
+             
+              </xs:complexType>
+          </xs:element>
+
+</xs:sequence>   
+</xs:complexType>
+</xs:element>
 </xs:schema>
