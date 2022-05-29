@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tienda_videojuegos xmlns="https://www.w3schools.com"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="https://www.w3schools.com validador.xsd">
+<tienda_videojuegos xmlns="https://www.w3schools.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.w3schools.com validador.xsd">
     <videojuego genero="Deportes">
         <codigo>FUT1234?¿</codigo>
         <nombre>FIFA</nombre>
@@ -9,7 +7,7 @@ xsi:schemaLocation="https://www.w3schools.com validador.xsd">
         <precio>39</precio>
         <Distribuidora>EA</Distribuidora>
         <!-- Quito las ventas -->
-    
+
     </videojuego>
     <videojuego genero="Accion">
         <codigo>SOU4321¿?</codigo>
@@ -17,11 +15,10 @@ xsi:schemaLocation="https://www.w3schools.com validador.xsd">
         <fecha>2022-2-14</fecha>
         <precio>34</precio>
         <Distribuidora>From Software</Distribuidora>
-                <!-- Quito las ventas -->
+        <!-- Quito las ventas -->
 
     </videojuego>
-    
-    
+
 
     <cliente Id_cli="123">
         <codigo>MER5224¿</codigo>
@@ -32,14 +29,14 @@ Caballero Cubero
         <localizacion>Barcelona</localizacion>
         <Compras>13</Compras>
         <Fecha_afiliado>2022-09-11</Fecha_afiliado>
-        <Miembros_sumados>6</Miembros_sumados>    
+        <Miembros_sumados>6</Miembros_sumados>
     </cliente>
     <cliente Id_cli="321">
         <codigo>ZAR4234¿</codigo>
         <nombre>Juan Antonio</nombre>
         <apellidos>
 Gomez Fernandez
-        </apellidos>    
+        </apellidos>
         <localizacion>Zaragoza</localizacion>
         <Compras>19</Compras>
         <Fecha_afiliado>2013-12-11</Fecha_afiliado>

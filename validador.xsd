@@ -1,60 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-targetNamespace="https://www.w3schools.com"
-xmlns="https://www.w3schools.com"
-elementFormDefault="qualified">
-<xs:element name="tienda_videojuegos">
-  <xs:complexType>
-    <xs:sequence>
-          <xs:element name="videojuego" minOccurs="2" maxOccurs="unbounded">
-            <xs:complexType>
-              <xs:sequence>
-            
-                <xs:element name="codigo">
-                  <xs:simpleType>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://www.w3schools.com" xmlns="https://www.w3schools.com" elementFormDefault="qualified">
+  <xs:element name="tienda_videojuegos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="videojuego" minOccurs="2" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+
+              <xs:element name="codigo">
+                <xs:simpleType>
                   <xs:restriction base="xs:string">
-                  <xs:pattern value="[A-Z]{3}[0-9]{4}[(.@#!¿=$%^+*?)]{2}"/>
+                    <xs:pattern value="[A-Z]{3}[0-9]{4}[(.@#!¿=$%^+*?)]{2}" />
                   </xs:restriction>
-                  </xs:simpleType>
-                </xs:element>
-                <xs:element name="nombre" type="xs:string"/>
-                <xs:element name="fecha" type="xs:string"/>
-                <xs:element name="precio" type="xs:int"/>
-                <xs:element name="Distribuidora" type="xs:string"/>
-                <xs:element name="Ventas" type="xs:int" minOccurs="0"/>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nombre" type="xs:string" />
+              <xs:element name="fecha" type="xs:string" />
+              <xs:element name="precio" type="xs:int" />
+              <xs:element name="Distribuidora" type="xs:string" />
+              <xs:element name="Ventas" type="xs:int" minOccurs="0" />
             </xs:sequence>
-            <xs:attribute name="genero">                 
-            </xs:attribute>
-            </xs:complexType>
-          </xs:element>
-          <xs:element name="cliente" minOccurs="1" maxOccurs="unbounded">
-              <xs:complexType>
-              <xs:sequence>
-                
-                <xs:element name="codigo">
-                  <xs:simpleType>
+            <xs:attribute name="genero"></xs:attribute>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="cliente" minOccurs="1" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+
+              <xs:element name="codigo">
+                <xs:simpleType>
                   <xs:restriction base="xs:string">
-                  <xs:pattern value="[A-Z]{3}[0-9]{4}[(@#$%?=¿.^+)]"/>
+                    <xs:pattern value="[A-Z]{3}[0-9]{4}[(@#$%?=¿.^+)]" />
                   </xs:restriction>
-                  </xs:simpleType>
-                  </xs:element>
+                </xs:simpleType>
+              </xs:element>
 
-                <xs:element name="nombre" type="xs:string"/>
-                <xs:element name="apellidos" type="xs:string" minOccurs="0"/>
-                <xs:element name="primer_apellido" type="xs:string" minOccurs="0"/>
-                <xs:element name="localizacion" type="xs:string"/>
-                <xs:element name="Compras" type="xs:string"/>
-                <xs:element name="Fecha_afiliado" type="xs:date"/>
-                <xs:element name="Miembros_sumados"/>
-            
+              <xs:element name="nombre" type="xs:string" />
+              <xs:element name="apellidos" type="xs:string" minOccurs="0" />
+              <xs:element name="primer_apellido" type="xs:string" minOccurs="0" />
+              <xs:element name="localizacion" type="xs:string" />
+              <xs:element name="Compras" type="xs:string" />
+              <xs:element name="Fecha_afiliado" type="xs:date" />
+              <xs:element name="Miembros_sumados" />
 
-              </xs:sequence>
-              <xs:attribute name="Id_cli" use="required">                 
-            </xs:attribute>
-              </xs:complexType>
-          </xs:element>
 
-</xs:sequence>   
-</xs:complexType>
-</xs:element>
+            </xs:sequence>
+            <xs:attribute name="Id_cli" use="required"></xs:attribute>
+          </xs:complexType>
+        </xs:element>
+
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>
