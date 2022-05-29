@@ -1,0 +1,11 @@
+table {
+    border: solid;
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    height: auto;
+}
+
+li {
+    list-style: none;
+}

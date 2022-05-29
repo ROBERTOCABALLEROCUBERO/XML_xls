@@ -2,16 +2,16 @@
 <tienda_videojuegos xmlns="https://www.w3schools.com"
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="https://www.w3schools.com validador.xsd">
-    <videojuego>
+    <videojuego genero="Deportes">
         <codigo>FUT1234?¿</codigo>
         <nombre>FIFA</nombre>
         <fecha>2022-05-11</fecha>
-        <precio>35</precio>
+        <precio>39</precio>
         <Distribuidora>EA</Distribuidora>
         <!-- Quito las ventas -->
     
     </videojuego>
-    <videojuego>
+    <videojuego genero="Accion">
         <codigo>SOU4321¿?</codigo>
         <nombre>Elden Ring</nombre>
         <fecha>2022-2-14</fecha>
@@ -23,7 +23,7 @@ xsi:schemaLocation="https://www.w3schools.com validador.xsd">
     
     
 
-    <cliente>
+    <cliente Id_cli="123">
         <codigo>MER5224¿</codigo>
         <nombre>Roberto</nombre>
         <apellidos>
@@ -34,7 +34,7 @@ Caballero Cubero
         <Fecha_afiliado>2022-09-11</Fecha_afiliado>
         <Miembros_sumados>6</Miembros_sumados>    
     </cliente>
-    <cliente>
+    <cliente Id_cli="321">
         <codigo>ZAR4234¿</codigo>
         <nombre>Juan Antonio</nombre>
         <apellidos>

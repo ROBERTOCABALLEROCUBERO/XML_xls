@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tienda_videojuegos xmlns="https://www.w3schools.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.w3schools.com validador.xsd">
-    <videojuego>
+    <videojuego genero="Deportes">
         <codigo>FUT1234?¿</codigo>
         <nombre>FIFA</nombre>
         <fecha>2022-05-11</fecha>
@@ -9,7 +9,7 @@
         <Ventas>132343</Ventas>
 
     </videojuego>
-    <videojuego>
+    <videojuego genero="Accion">
         <codigo>SOU4321¿?</codigo>
         <nombre>Elden Ring</nombre>
         <fecha>2022-2-14</fecha>
@@ -20,7 +20,7 @@
     </videojuego>
 
 
-    <cliente>
+    <cliente Id_cli="112">
         <codigo>PAR4234¿</codigo>
         <nombre>Juan</nombre>
         <!-- Pongo el primer apellido -->
@@ -32,7 +32,7 @@ Perez
         <Fecha_afiliado>2013-05-21</Fecha_afiliado>
         <Miembros_sumados>2</Miembros_sumados>
     </cliente>
-    <cliente>
+    <cliente Id_cli="123">
         <codigo>PER4414¿</codigo>
         <nombre>Miguel</nombre>
         <primer_apellido>
