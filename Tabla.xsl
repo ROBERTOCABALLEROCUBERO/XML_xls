@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  version="1.0">
-
+<xsl:output method="html"/>
 <xsl:template match="/">
   <html>
       <head><link rel="stylesheet" href="/Estilos.css"/></head>
   <body>
   <h1>Videojuegos</h1>
   <ul>
-    <xsl:for-each select="tienda_videojuegos/cliente">
+    <xsl:for-each select="tienda_videojuegos/cliente/nombre">
     <xsl:choose>
         <xsl:when test="id_cli = '123'">
           <li bgcolor="#808080">
-          <xsl:value-of select="tienda_videojuegos/clientes/nombre"/>Roberto</li>
+          <xsl:value-of select="tienda_videojuegos/cliente/nombre"/>Roberto</li>
         </xsl:when>
         <xsl:otherwise>
           <li bgcolor="#c0c0c0"><xsl:value-of select="tienda_videojuegos/cliente/nombre"/>Juan Antonio</li>
